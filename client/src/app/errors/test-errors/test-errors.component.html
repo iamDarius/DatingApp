@@ -1,0 +1,24 @@
+<button
+  class="btn btn-primary"
+  type="button"
+  (click)="throwError('error/not-found')"
+></button>
+<button
+  class="btn btn-primary"
+  type="button"
+  (click)="throwError('error/bad-request')"
+></button>
+<button
+  class="btn btn-primary"
+  type="button"
+  (click)="throwError('error/server-error')"
+></button>
+<button
+  class="btn btn-primary"
+  type="button"
+  (click)="throwError('error/auth')"
+></button>
+
+<ul class="row mt-5 text-danger" *ngIf="validationErrors.length > 0">
+  <li *ngFor="let error of validationErrors">{{ error }}</li>
+</ul>
