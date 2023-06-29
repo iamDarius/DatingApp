@@ -1,16 +1,11 @@
 using API.Data;
-
-using System.Threading.Tasks;
 using API.Entities;
-using Microsoft.AspNetCore.Mvc;
-
-
-using System.Security.Cryptography;
-using System.Text;
 using API.DTOs;
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
 using API.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace API.Controllers
 {

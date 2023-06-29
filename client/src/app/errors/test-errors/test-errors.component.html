@@ -1,18 +1,10 @@
-<button
-  class="btn btn-primary"
-  type="button"
-  (click)="throwError('error/not-found')"
-></button>
-<button
-  class="btn btn-primary"
-  type="button"
-  (click)="throwError('error/bad-request')"
-></button>
-<button
-  class="btn btn-primary"
-  type="button"
-  (click)="throwError('error/server-error')"
-></button>
+<button class="btn btn-primary" type="button" (click)="get500Error()">
+  Test 500 Error
+</button>
+<button class="btn btn-primary" type="button" (click)="get400Error()">
+  Test 400 Error
+</button>
+<button class="btn btn-primary" type="button" (click)="get401Error()"></button>
 <button
   class="btn btn-primary"
   type="button"
